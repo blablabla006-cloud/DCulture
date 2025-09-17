@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #0b0b0b 0%, #1a1a1a 40%, #000 100%);
-  color: #eaeaea;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 40%, #f2f2f2 100%);
+  color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +17,8 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 25% 25%, rgba(255,215,0,0.05) 0%, transparent 60%),
-                    radial-gradient(circle at 75% 75%, rgba(255,215,0,0.05) 0%, transparent 60%);
+  background-image: radial-gradient(circle at 25% 25%, rgba(255,215,0,0.15) 0%, transparent 60%),
+                    radial-gradient(circle at 75% 75%, rgba(255,215,0,0.1) 0%, transparent 60%);
   background-size: 600px 600px;
   pointer-events: none;
   z-index: 0;
@@ -29,8 +29,8 @@ h1 {
   font-size: 2.8em;
   margin-bottom: 40px;
   text-align: center;
-  color: #ffd700;
-  text-shadow: 0 0 25px rgba(255,215,0,0.8), 0 0 5px #fff;
+  color: #b8860b; /* dark goldenrod */
+  text-shadow: 0 0 20px rgba(218,165,32,0.4), 0 0 3px #fff;
   font-family: 'Garamond', serif;
   letter-spacing: 2px;
   position: relative;
@@ -42,18 +42,18 @@ h1::after {
   display: block;
   font-size: 0.8em;
   margin-top: 10px;
-  color: rgba(255, 215, 0, 0.7);
-  text-shadow: 0 0 10px rgba(255,215,0,0.6);
+  color: rgba(184, 134, 11, 0.8);
+  text-shadow: 0 0 10px rgba(218,165,32,0.5);
   letter-spacing: 3px;
 }
 
 /* ===== Player cards ===== */
 .player {
-  background: rgba(20, 20, 20, 0.92);
-  border: 1px solid rgba(255, 215, 0, 0.3);
+  background: #fff;
+  border: 1px solid rgba(218,165,32,0.4);
   border-radius: 15px;
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.25),
-              0 0 15px rgba(255, 215, 0, 0.1) inset;
+  box-shadow: 0 4px 20px rgba(218,165,32,0.15),
+              0 0 10px rgba(218,165,32,0.1) inset;
   padding: 25px;
   margin: 25px 0;
   max-width: 650px;
@@ -66,8 +66,8 @@ h1::after {
 
 .player:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 0 70px rgba(255, 215, 0, 0.55),
-              0 0 25px rgba(255, 215, 0, 0.25) inset;
+  box-shadow: 0 0 35px rgba(218,165,32,0.45),
+              0 0 15px rgba(218,165,32,0.25) inset;
 }
 
 .player::before {
@@ -77,8 +77,8 @@ h1::after {
   top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  color: rgba(255,215,0,0.15);
-  text-shadow: 0 0 20px rgba(255,215,0,0.2);
+  color: rgba(218,165,32,0.2);
+  text-shadow: 0 0 12px rgba(218,165,32,0.2);
 }
 
 .player::after {
@@ -86,7 +86,7 @@ h1::after {
   display: block;
   font-size: 0.75em;
   margin-top: 12px;
-  color: rgba(255,215,0,0.6);
+  color: rgba(218,165,32,0.7);
   font-style: italic;
   letter-spacing: 1px;
 }
@@ -94,8 +94,8 @@ h1::after {
 /* Episode titles */
 .player h2 {
   margin-top: 0;
-  color: #ffe680;
-  text-shadow: 0 0 5px rgba(255, 230, 128, 0.8), 0 0 20px rgba(255,215,0,0.4);
+  color: #b8860b;
+  text-shadow: 0 0 5px rgba(218,165,32,0.4);
   font-family: 'Palatino Linotype', serif;
   letter-spacing: 1px;
   position: relative;
@@ -103,19 +103,19 @@ h1::after {
 
 .player h2::before {
   content: "✧ ";
-  color: rgba(255, 215, 0, 0.9);
+  color: rgba(218,165,32,0.9);
 }
 
 .player h2::after {
   content: " ✧";
-  color: rgba(255, 215, 0, 0.9);
+  color: rgba(218,165,32,0.9);
 }
 
 /* ===== Audio bar ===== */
 audio {
   width: 100%;
   margin-top: 10px;
-  filter: drop-shadow(0 0 12px rgba(255,215,0,0.3));
+  filter: drop-shadow(0 0 8px rgba(218,165,32,0.3));
   border-radius: 6px;
 }
 
@@ -132,11 +132,11 @@ audio {
   font-weight: bold;
   letter-spacing: 1px;
   transition: all 0.25s ease;
-  box-shadow: 0 0 12px rgba(255,215,0,0.5);
+  box-shadow: 0 0 12px rgba(218,165,32,0.5);
 }
 
 .download:hover {
   background: linear-gradient(135deg, #ffe34d, #ffd000);
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(255,215,0,0.8);
-}
+  box-shadow: 0 0 20px rgba(218,165,32,0.6);
+} 
