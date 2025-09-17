@@ -38,7 +38,7 @@ h1 {
 }
 
 h1::after {
-  content: "✦ Rituals of Connection ✦";
+  content: "✦ Parasocial Saints ✦";
   display: block;
   font-size: 0.8em;
   margin-top: 10px;
@@ -82,7 +82,7 @@ h1::after {
 }
 
 .player::after {
-  content: "— shared devotion, digital communion —";
+  content: "— Liv, Malak, Evangeline, Matine—";
   display: block;
   font-size: 0.75em;
   margin-top: 12px;
