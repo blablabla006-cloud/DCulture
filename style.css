@@ -143,20 +143,39 @@ audio {
 
 .button {
   display: inline-block;
-  padding: 12px 22px;
+  padding: 12px 28px;
+  margin-top: 20px;
   background: linear-gradient(135deg, #ffd700, #e6c200);
   color: #000;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.25s ease;
-  box-shadow: 0 0 12px rgba(218,165,32,0.5);
+  border-radius: 40px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(218,165,32,0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.4);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
 }
 
 .button:hover {
   background: linear-gradient(135deg, #ffe34d, #ffd000);
-  transform: scale(1.08);
-  box-shadow: 0 0 20px rgba(218,165,32,0.6);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 18px rgba(218,165,32,0.6);
+}
+
+.button:hover::after {
+  left: 130%;
 }
